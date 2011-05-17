@@ -7,5 +7,5 @@ labelfile="/var/tmp/$(uuidgen).gif"
 
 convert -density 120 -background transparent -fill lightblue  \
            -strokewidth 1  -stroke white   -undercolor transparent \
-           -size 130x60 -gravity center label:"$(date +%Y-%m-%d --reference="$videofile")" $labelfile
+           -size 130x35 -gravity center label:"$(date +%Y-%m-%d --reference="$videofile")" $labelfile
 echo $labelfile

@@ -3,7 +3,6 @@ if [ \! -f "$1" ]; then
 	exit 1
 fi
 videofile=$1
-#labelfile="$(dirname $1)/$(uuidgen).png"
 labelfile="/var/tmp/$(uuidgen).gif"
 
 convert -density 120 -background transparent -fill lightblue  \
